@@ -138,7 +138,7 @@
                     </If>
                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="574,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[CurrentMail.Subject]" />
                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="574,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[CurrentMail.Body]" />
-                    <ui:Replace Input="{x:Null}" Pattern="{x:Null}" Replacement="{x:Null}" sap:VirtualizedContainerService.HintSize="574,60" sap2010:WorkflowViewState.IdRef="Replace_1" IsBuilderTabModified="False" RegexOption="IgnoreCase, Compiled" />
+                    <ui:Replace Input="{x:Null}" Replacement="{x:Null}" sap:VirtualizedContainerService.HintSize="574,60" sap2010:WorkflowViewState.IdRef="Replace_1" IsBuilderTabModified="False" Pattern="&lt;[^&gt;]*&gt;" RegexOption="IgnoreCase, Compiled" />
                   </Sequence>
                 </ActivityAction>
               </umab:ForEachEmailX.Body>
