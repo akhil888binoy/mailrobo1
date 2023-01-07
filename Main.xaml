@@ -176,7 +176,7 @@
                         </Sequence>
                       </If.Else>
                     </If>
-                    <If Condition="[CurrentMail.Subject.Contains(&quot;Download Attachment&quot;)]" sap:VirtualizedContainerService.HintSize="574,618" sap2010:WorkflowViewState.IdRef="If_3">
+                    <If Condition="[CurrentMail.Subject.Contains(&quot;Download Attachment&quot;)]" DisplayName="If Subject Contains Download Attachment" sap:VirtualizedContainerService.HintSize="574,618" sap2010:WorkflowViewState.IdRef="If_3">
                       <If.Then>
                         <Sequence sap:VirtualizedContainerService.HintSize="496,339" sap2010:WorkflowViewState.IdRef="Sequence_8">
                           <sap:WorkflowViewStateService.ViewState>
