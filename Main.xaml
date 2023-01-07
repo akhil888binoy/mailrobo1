@@ -96,7 +96,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <umab:MarkMailAsReadX MailMessage="{x:Null}" DisplayName="Mark Email As Read/Unread" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="MarkMailAsReadX_1" MarkAs="Read" />
+                    <umab:MarkMailAsReadX DisplayName="Mark Email As Read/Unread" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="MarkMailAsReadX_1" MailMessage="[CurrentMail]" MarkAs="Read" />
                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[CurrentMail.Subject]" />
                   </Sequence>
                 </ActivityAction>
