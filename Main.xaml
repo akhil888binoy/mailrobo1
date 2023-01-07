@@ -149,7 +149,7 @@
                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[CurrentMail.From.DisplayName]" />
                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[CurrentMail.From.Address]" />
                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[Regex.Replace(CurrentMail.Body,&quot;&lt;[^&gt;]*&gt;&quot;,&quot;&quot;)]" />
-                    <umab:SaveMailX FileName="{x:Null}" FolderPath="{x:Null}" MailMessage="{x:Null}" DisplayName="Save Email" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="SaveMailX_1" />
+                    <umab:SaveMailX FileName="{x:Null}" DisplayName="Save Email" FolderPath="E:\RPA_workspace\Robot7_EmailAutomationRobot\SaveMails" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="SaveMailX_1" MailMessage="[CurrentMail]" />
                   </Sequence>
                 </ActivityAction>
               </umab:ForEachEmailX.Body>
