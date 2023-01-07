@@ -250,7 +250,7 @@
                               </umabh:HtmlContentArgument>
                             </umab:ForwardMailX.HtmlBodyFromFile>
                           </umab:ForwardMailX>
-                          <uasa:AppendItemToList x:TypeArguments="x:Object" ItemIndex="{x:Null}" ItemToAppend="{x:Null}" List="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_6" />
+                          <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Forwarded to List" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_7" ItemToAppend="Forwarded Email" List="[OutputReport]" />
                         </Sequence>
                       </If.Then>
                       <If.Else>
