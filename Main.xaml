@@ -184,7 +184,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <umab:SaveMailAttachmentsX Attachments="{x:Null}" FolderPath="{x:Null}" DisplayName="Save Email Attachments" ExcludeInlineAttachments="False" Filter="*.jpg" sap:VirtualizedContainerService.HintSize="434,228" sap2010:WorkflowViewState.IdRef="SaveMailAttachmentsX_1" Message="[CurrentMail]" OverwriteExisting="True" />
+                          <umab:SaveMailAttachmentsX Attachments="{x:Null}" DisplayName="Save Email Attachments" ExcludeInlineAttachments="False" Filter="*.jpg" FolderPath="E:\RPA_workspace\Robot7_EmailAutomationRobot\SavedAttachments" sap:VirtualizedContainerService.HintSize="434,228" sap2010:WorkflowViewState.IdRef="SaveMailAttachmentsX_1" Message="[CurrentMail]" OverwriteExisting="True" />
                         </Sequence>
                       </If.Then>
                       <If.Else>
