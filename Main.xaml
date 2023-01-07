@@ -81,25 +81,25 @@
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main " sap:VirtualizedContainerService.HintSize="828,1792" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main " sap:VirtualizedContainerService.HintSize="828,1692" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <umab:GmailApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Account="akhil888binoy@gmail.com" DisplayName="Use MY Gmail" EmailAddress="akhil888binoy@gmail.com" sap:VirtualizedContainerService.HintSize="766,1681" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_1" Timeout="90" UseConnectionService="False">
+    <umab:GmailApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Account="akhil888binoy@gmail.com" DisplayName="Use MY Gmail" EmailAddress="akhil888binoy@gmail.com" sap:VirtualizedContainerService.HintSize="766,1581" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_1" Timeout="90" UseConnectionService="False">
       <umab:GmailApplicationCard.Body>
         <ActivityAction x:TypeArguments="um:IMailQuickHandle">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Gmail" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="DO" sap:VirtualizedContainerService.HintSize="732,1501" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="DO" sap:VirtualizedContainerService.HintSize="732,1401" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <umab:ForEachEmailX DisplayName="For Each Dummy Email" sap:VirtualizedContainerService.HintSize="670,1390" sap2010:WorkflowViewState.IdRef="ForEachEmailX_1" IncludeSubfolders="False" Mails="[Gmail.Folder(&quot;Inbox&quot;)]" NumberOfEmailsLimit="10" UnreadOnly="False" WithAttachmentsOnly="False">
+            <umab:ForEachEmailX DisplayName="For Each Dummy Email" sap:VirtualizedContainerService.HintSize="670,1290" sap2010:WorkflowViewState.IdRef="ForEachEmailX_1" IncludeSubfolders="False" Mails="[Gmail.Folder(&quot;Inbox&quot;)]" NumberOfEmailsLimit="10" UnreadOnly="False" WithAttachmentsOnly="False">
               <umab:ForEachEmailX.Body>
                 <ActivityAction x:TypeArguments="snm:MailMessage, x:Int32">
                   <ActivityAction.Argument1>
@@ -108,7 +108,7 @@
                   <ActivityAction.Argument2>
                     <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                   </ActivityAction.Argument2>
-                  <Sequence DisplayName="Perform Email Operations" sap:VirtualizedContainerService.HintSize="636,1139" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Perform Email Operations" sap:VirtualizedContainerService.HintSize="636,1039" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -137,8 +137,7 @@
                       </If.Else>
                     </If>
                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="574,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[CurrentMail.Subject]" />
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="574,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[CurrentMail.Body]" />
-                    <ui:Replace Input="{x:Null}" Replacement="{x:Null}" sap:VirtualizedContainerService.HintSize="574,60" sap2010:WorkflowViewState.IdRef="Replace_1" IsBuilderTabModified="False" Pattern="&lt;[^&gt;]*&gt;" RegexOption="IgnoreCase, Compiled" />
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="574,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[Regex.Replace(CurrentMail.Body,&quot;&lt;[^&gt;]*&gt;&quot;,&quot;&quot;)]" />
                   </Sequence>
                 </ActivityAction>
               </umab:ForEachEmailX.Body>
