@@ -151,13 +151,13 @@
                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="574,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[Regex.Replace(CurrentMail.Body,&quot;&lt;[^&gt;]*&gt;&quot;,&quot;&quot;)]" />
                     <If Condition="[CurrentMail.Subject.Contains(&quot;Save&quot;) or CurrentMail.Subject.Contains(&quot;save&quot;)]" DisplayName="If Subject Contain Save/save" sap:VirtualizedContainerService.HintSize="574,576" sap2010:WorkflowViewState.IdRef="If_2">
                       <If.Then>
-                        <Sequence sap:VirtualizedContainerService.HintSize="496,297" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <Sequence DisplayName="Save Emails" sap:VirtualizedContainerService.HintSize="496,297" sap2010:WorkflowViewState.IdRef="Sequence_6">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <umab:SaveMailX FileName="{x:Null}" DisplayName="Save Email" FolderPath="E:\RPA_workspace\Robot7_EmailAutomationRobot\SaveMails" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="SaveMailX_1" MailMessage="[CurrentMail]" />
+                          <umab:SaveMailX FileName="{x:Null}" DisplayName="Save Current  Email" FolderPath="E:\RPA_workspace\Robot7_EmailAutomationRobot\SaveMails" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="SaveMailX_1" MailMessage="[CurrentMail]" />
                         </Sequence>
                       </If.Then>
                       <If.Else>
