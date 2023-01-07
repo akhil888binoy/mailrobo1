@@ -278,15 +278,15 @@
                         </Sequence>
                       </If.Else>
                     </If>
-                    <If Condition="[CurrentMail.Subject.Contains(&quot;Important&quot;)]" sap:VirtualizedContainerService.HintSize="574,523" sap2010:WorkflowViewState.IdRef="If_6">
+                    <If Condition="[CurrentMail.Subject.Contains(&quot;Important&quot;)]" DisplayName="If Subject Contain Important" sap:VirtualizedContainerService.HintSize="574,523" sap2010:WorkflowViewState.IdRef="If_6">
                       <If.Then>
-                        <Sequence sap:VirtualizedContainerService.HintSize="496,244" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                        <Sequence DisplayName="Move" sap:VirtualizedContainerService.HintSize="496,244" sap2010:WorkflowViewState.IdRef="Sequence_14">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <umab:MoveMailX DisplayName="Move Email" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="MoveMailX_1" MailFolder="Important" MailMessage="[CurrentMail]" />
+                          <umab:MoveMailX DisplayName="Move Current Email" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="MoveMailX_1" MailFolder="Important" MailMessage="[CurrentMail]" />
                         </Sequence>
                       </If.Then>
                       <If.Else>
