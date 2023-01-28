@@ -336,7 +336,7 @@
                     </Assign>
                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="574,92" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[str_OutputReport]" />
                     <ui:ReadTextFile File="{x:Null}" Content="[EmailBody]" DisplayName="Read Text File" FileName="EmailTemplate.txt.txt" sap:VirtualizedContainerService.HintSize="574,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-                    <umab:SendMailX Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="574,396" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Email Output Summary" To="888innovations888@gmail.com" UseDocumentAsBody="False">
+                    <umab:SendMailX Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="574,396" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Email Output Summary" To="888innovations888@gmail.com" UseDocumentAsBody="False">
                       <umab:SendMailX.Files>
                         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
                           <InArgument x:TypeArguments="x:String">SavedAttachments\5stars.jpg</InArgument>
