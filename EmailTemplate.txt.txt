@@ -1,0 +1,11 @@
+Sir,
+
+	Your email automation completed at {0}.
+
+	The following logs are recorded:
+
+	{1} 
+	Please see the attached images/documents
+
+	Sincerely,
+	mailrobo
