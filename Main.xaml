@@ -236,6 +236,9 @@
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
                         <Sequence DisplayName=" Forward Sequence" sap:VirtualizedContainerService.HintSize="496,1065" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="EmailSend" />
+                          </Sequence.Variables>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
